@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        
 
+        <Grid Grid.Column="0" Margin="30">
+                <StackPanel>
+                    <ComboBox Name="cb_customers" Margin="29" DisplayMemberPath="Key"/>
+                    <ComboBox Name="cb_products" Margin="29" DisplayMemberPath="Key"/>
+                    <Button x:Name="btn_save" Content="Lägg till" Click="btn_save_Click" HorizontalAlignment="Center" Padding="8"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
